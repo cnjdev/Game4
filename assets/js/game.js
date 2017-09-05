@@ -3,9 +3,9 @@ var playerSelected = false;
 var enemySelected = false;
 
 var Characters = {
-	"Luke": { hp: 125, attack: 25, imgUrl:"lukeskywalker.png" }, 
-	"Rey": { hp: 100, attack: 10, imgUrl: "reyskywalker.png" }, 
-	"Gen. Hux": { hp: 110, attack: 9, imgUrl: "generalhux.jpg" }, 
+	"Luke": { hp: 125, attack: 15, imgUrl:"lukeskywalker.png" }, 
+	"Rey": { hp: 100, attack: 11, imgUrl: "reyskywalker.png" }, 
+	"Gen. Hux": { hp: 110, attack: 10, imgUrl: "generalhux.jpg" }, 
 	"Kylo Ren": { hp: 147, attack: 21, imgUrl: "kyloren.jpg" }
 };
 
@@ -90,6 +90,7 @@ function startGame(){
 	for (charName in Characters){
 		$("#characters").append(generateDiv(charName));
 	}
+	// set event for picking fighter
 	$("[itemType='Fighter'").on("click", pickFighter);
 }
 
@@ -144,6 +145,7 @@ function attack(){
 		
 		// show turn events
 		turnLog += "You have been defeated. Game over. <br/>";
+		console.log(turnLog);
 		$("#turnEvents").html(turnLog);
 
 		$("#attackButton").hide(); // hide Attack button
@@ -177,11 +179,13 @@ function attack(){
 	} 
 
 	// log events of past turn
+	console.log(turnLog);
 	$("#turnEvents").html(turnLog);
 }
 
 // start the game when the page loads
 $(document).ready(startGame);
+
 // add functions to click events of elements
 $("#attackButton").on("click", attack);
 $("#replayButton").on("click", startGame);
