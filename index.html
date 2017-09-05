@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Star Wars RPG</title>
+
+	<!-- reset css -->
+	<link rel="stylesheet" href="assets/css/reset.css">
+
+	<!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- jquery included -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<!-- Droid Sans font -->
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Droid+Sans:400,700">
+
+	<!-- custom css -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="container">
+
+	<div class="row">
+		<h2>Star Wars RPG</h2>
+	</div>
+
+	<div class="row">
+		<div class="col-md-3 col-md-offset-2">
+			<h3>Player</h3>
+			<div id="player">
+				<!-- player goes here -->
+			</div>
+		</div>
+		<div class="col-md-2">
+			<h3>vs.</h3>
+			<button id="attackButton">Attack</button>
+		</div>
+		<div class="col-md-3">
+			<h3>Defender</h3>
+			<div id="defender">
+				<!-- defender goes here -->
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-8">
+			<h3 id="gameCommand"></h3>
+			<div id="characters">
+				<!-- characters go here -->
+			</div>
+		</div>
+
+		<div class="col-md-4">
+			<h3 id="gameResult">Game Events</h3>
+			<p id="turnEvents">
+				<!-- events of the current turn go here -->
+			</p>
+			<button id="replayButton">Replay</button>
+		</div>
+	</div>
+
+</div>
+
+<script type="text/javascript" src="assets/js/game.js">
+</script>
+
+</body>
+</html>
