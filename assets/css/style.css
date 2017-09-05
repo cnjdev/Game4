@@ -5,7 +5,7 @@ body
 	color: #ff6;
 }
 
-h1, h2, h3, p {
+h1, h2, h3, p, button {
 	font-family: "Droid Sans", arial, verdana, sans-serif;
 }
 
@@ -17,4 +17,14 @@ button {
 	background-color: #060;
 	font-size: 18px;
 	color: #ff6;
+}
+
+.fighter {
+	display: inline-block;
+	margin: 5px;
+}
+
+.fighter img {
+	height: 100px;
+	width: 100px;
 }

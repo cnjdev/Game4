@@ -47,18 +47,14 @@ function generateDiv(charName){
 
 	// generate HTML for div
 	var charDiv = $("<div>");
-	charDiv.attr("itemType", "Fighter");
+	charDiv.attr("class", "fighter");
 	charDiv.attr("fighterName", charName);
-	charDiv.css("display", "inline-block");
-	charDiv.css("margin", "5px");
 
 	// add character's name
 	charDiv.append($("<p>").html(charName));
 
 	// add image for character
 	var charImg = $("<img>");
-	charImg.attr("height", "100px");
-	charImg.attr("width", "100px");
 	charImg.attr("src", "assets/images/" + Character.imgUrl);
 	charDiv.append(charImg);
 
@@ -91,7 +87,7 @@ function startGame(){
 		$("#characters").append(generateDiv(charName));
 	}
 	// set event for picking fighter
-	$("[itemType='Fighter'").on("click", pickFighter);
+	$(".fighter").on("click", pickFighter);
 }
 
 function pickFighter(){
