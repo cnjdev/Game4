@@ -1,77 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+	<meta charset="UTF-8" />
+
 	<title>Star Wars RPG</title>
 
 	<!-- reset css -->
 	<link rel="stylesheet" href="assets/css/reset.css">
 
-	<!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-	<!-- jquery included -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-  <!-- Optional theme -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
-
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
 	<!-- Droid Sans font -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700">
 
 	<!-- custom css -->
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/splash.css">
 </head>
+
 <body>
 
-<div class="container">
+<p id="start">
+	A short time ago, in a browser not very far away...&hellip;
+</p>
 
-	<div class="row">
-		<h2>Star Wars RPG</h2>
-	</div>
+<h1>STAR WARS<sub>RPG Game</sub></h1>
 
-	<div class="row">
-		<div class="col-md-3 col-md-offset-2">
-			<h3>Player</h3>
-			<div id="player">
-				<!-- player goes here -->
-			</div>
-		</div>
-		<div class="col-md-2">
-			<h3>vs.</h3>
-			<button id="attackButton">Attack</button>
-		</div>
-		<div class="col-md-3">
-			<h3>Defender</h3>
-			<div id="defender">
-				<!-- defender goes here -->
-			</div>
-		</div>
-	</div>
+<div id="titles"><div id="titlecontent">
 
-	<div class="row">
-		<div class="col-md-8">
-			<h3 id="gameCommand"></h3>
-			<div id="characters">
-				<!-- characters go here -->
-			</div>
-		</div>
+	<p class="center">RPG GAME<br />Character Battle!</p>
+	
+	<p>This is a simple RPG Game where Characters Battle until one is left standing.</p>
+	
+	<p>To begin the game, select a Player.  Then select Defenders to fight with. When a Player and Defender are chosen, the Fight begins...</p>
 
-		<div class="col-md-4">
-			<h3 id="gameResult">Game Events</h3>
-			<p id="turnEvents">
-				<!-- events of the current turn go here -->
-			</p>
-			<button id="replayButton">Replay</button>
-		</div>
-	</div>
+	<p>A Fight ends when the Player or the Defender are defeated. If the Player is defeated, the game is over. If the Defender is defeated, choose another Defender to fight.  If there are no more Defenders to defeat, the game is won!</p>
 
-</div>
+	<p>With each round, the Player's attack grows stronger as the Defender's attack remains the same. Choose the order of Defenders wisely!</p>
+	
+	<p>Scrolling text effect thanks to <a href="http://www.sitepoint.com/css3-starwars-scrolling-text/">sitepoint.com/css3-starwars-scrolling-text/</a></p>
 
-<script type="text/javascript" src="assets/js/game.js">
-</script>
+	<p>Now on to the game...</p>
+
+</div></div>
 
 </body>
+
+<script type="text/javascript">
+	setTimeout(
+		function(){ 
+			location.replace("game.html");
+	 	}, 
+	30000);
+</script>
+
 </html>

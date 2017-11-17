@@ -4,9 +4,9 @@ var enemySelected = false;
 
 var Characters = {
 	"Luke": { hp: 125, attack: 15, imgUrl:"lukeskywalker.png" }, 
-	"Rey": { hp: 100, attack: 11, imgUrl: "reyskywalker.png" }, 
+	"Rey": { hp: 111, attack: 18, imgUrl: "reyskywalker.png" }, 
 	"Gen. Hux": { hp: 110, attack: 10, imgUrl: "generalhux.jpg" }, 
-	"Kylo Ren": { hp: 147, attack: 21, imgUrl: "kyloren.jpg" }
+	"Kylo Ren": { hp: 147, attack: 20, imgUrl: "kyloren.jpg" }
 };
 
 var Player = {
